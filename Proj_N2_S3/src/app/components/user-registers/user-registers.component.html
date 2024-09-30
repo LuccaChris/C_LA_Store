@@ -1,13 +1,28 @@
 <mat-drawer-container class="Content">
     <mat-drawer class="drawerC" mode="side" opened="">
 
-        <img src="assets/img/perfilmg.png" alt="Imagem de perfil">
-        <P>Cadastro de usuarios</P>
-        <p>Estoque</p>
-        <p>DeashBorard</p>
-        <p>Sair</p>
+      <nav>
+        <ul>
+            <li><a href="#">Cadastro de Usuários</a></li>
+            <li><a href="#">Minhas Denúncias</a></li>
+            <li><a href="#">Denúncias</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Sair</a></li>
+        </ul>
+    </nav>
 
     </mat-drawer>
-    <mat-drawer-container class="ContentMain"></mat-drawer-container>
+    <mat-drawer-container class="ContentMain">
+     <form>
+        <input type="text" placeholder="ID" required>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Cargo" required>
+
+        <div class="buttons">
+            <button type="button" class="cancel">Cancelar</button>
+            <button type="submit" class="submit">Salvar</button>
+        </div>
+    </form>    </mat-drawer-container>
 </mat-drawer-container>
 <menu class="menu"></menu>
