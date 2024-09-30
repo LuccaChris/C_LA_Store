@@ -1,7 +1,25 @@
-.menu{
-    background-color: black;
-    width: 366px;
-    height: 100vh;
-}
 
+.Content{
+    width: auto;
+  height: 100vh;
+  margin: 0%;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  border-radius: 16px ;
+
+}
+.ContentMain{
+    border-radius: 16px;
+
+}
+.drawerC{
+    background-color: black;
+    border-radius: 16px;
+    width: 30%;
+}
+img{
+    width: 165px;
+    height: 175px;
+    border-radius: 50px;
+}
 
