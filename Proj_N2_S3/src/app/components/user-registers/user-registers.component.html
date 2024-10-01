@@ -1,28 +1,77 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 <mat-drawer-container class="Content">
     <mat-drawer class="drawerC" mode="side" opened="">
-
-      <nav>
-        <ul>
-            <li><a href="#">Cadastro de Usuários</a></li>
-            <li><a href="#">Minhas Denúncias</a></li>
-            <li><a href="#">Denúncias</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Sair</a></li>
-        </ul>
-    </nav>
-
+        <nav>
+            <ul>
+                <li><a href="#">Cadastro de Usuários</a></li>
+                <li><a href="#">Minhas Denúncias</a></li>
+                <li><a href="#">Denúncias</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
     </mat-drawer>
-    <mat-drawer-container class="ContentMain">
-     <form>
-        <input type="text" placeholder="ID" required>
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Cargo" required>
 
-        <div class="buttons">
-            <button type="button" class="cancel">Cancelar</button>
-            <button type="submit" class="submit">Salvar</button>
-        </div>
-    </form>    </mat-drawer-container>
+    <mat-drawer-container class="ContentMain">
+        <form class="dados-form">
+            <mat-form-field class="dados-full-width">
+                <mat-label>ID</mat-label>
+                <input matInput disabled value="">
+            </mat-form-field>
+
+            <table class="dados-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="dados-full-width">
+                            <mat-label>Primeiro Nome</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="dados-full-width">
+                            <mat-label>Cargo</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+
+            <mat-form-field class="dados-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Ex: Exemplo@hotmail.com">
+            </mat-form-field>
+
+            <div class="buttons">
+                <section>
+                    <div class="button-row">
+                        <div class="flex-containerbt">
+                            <div class="button-container">
+                                <button mat-mini-fab color="black" aria-label="editar">
+                                    <mat-icon>edit_square</mat-icon>
+                                </button>
+                            </div>
+                            <div class="button-container">
+                                <button mat-mini-fab color="black" aria-label="salvar">
+                                    <mat-icon>save</mat-icon>
+                                </button>
+                            </div>
+                            <div class="button-container">
+                                <button mat-mini-fab color="warn" aria-label="cancelar">
+                                    <mat-icon>cancel</mat-icon>
+                                </button>
+                            </div>
+                            <div class="button-container">
+                                <button mat-mini-fab aria-label="pesquisa">
+                                    <mat-icon>search</mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <mat-divider></mat-divider>
+            </div>
+        </form>
+    </mat-drawer-container>
 </mat-drawer-container>
-<menu class="menu"></menu>
