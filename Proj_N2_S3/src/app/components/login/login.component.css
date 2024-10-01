@@ -1,0 +1,88 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  }
+  .ladoEsquerdo {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  }
+  .iconeContainer {
+  display: flex;
+  justify-content: center; /* Centraliza o ícone */
+  margin-bottom: 20px; /* Espaçamento abaixo do ícone */
+  }
+  .iconeDeLogin {
+  width: 80px; /* Largura do ícone */
+  height: 80px; /* Altura do ícone */
+  border-radius: 50%; /* Torna a imagem arredondada */
+  border: 2px solid white; /* Borda branca ao redor do ícone */
+  }
+  .ladoDireito {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  .right-side {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  h1 {
+  margin: 10px 0;
+  }
+  h3 {
+  margin-bottom: 20px;
+  }
+  .formulario {
+  margin-bottom: 15px;
+  }
+  input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  margin-left: 60px;
+  }
+  .entrarBotaoBranco {
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 300px;
+  }
+  .entrarBotaoBranco:hover {
+  background-color: #ffffff;
+  }
+  .esqueceuSenha {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 280px;
+  }
+  .esqueceuSenha:hover {
+  text-decoration: underline;
+  }
+  .botaoEntrarPreto {
+  background-color: #000000;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  }
