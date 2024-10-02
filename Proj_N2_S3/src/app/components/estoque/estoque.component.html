@@ -15,25 +15,23 @@
         </nav>
     </mat-drawer>
 
-    <mat-drawer-container class="ContentMain">
-    
-        <form class="dados-form">
-            <h1>Gerenciamento de Estoque</h1>
+
+
 
     <!-- Formulário para Adicionar/Atualizar Produto -->
-    <form id="produto-form">
+
         <h2>Adicionar/Atualizar Produto no Estoque</h2>
         <label for="id_produto">ID do Produto:</label>
-        <input type="number" id="id_produto" name="id_produto" placeholder="Digite o ID do produto..." required>
+        <input style="margin-top: 175px;" type="number" id="id_produto" name="id_produto" placeholder="Digite o ID do produto..." required>
 
         <label for="quantidade">Quantidade:</label>
         <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade..." required>
 
         <label for="nivel_minimo">Nível Mínimo:</label>
         <input type="number" id="nivel_minimo" name="nivel_minimo" placeholder="Digite o nível mínimo..." required>
-
+        <br/>
         <button type="submit">Salvar Produto</button>
-    </form>
+
 
     <!-- Tabela para Exibir o Estoque -->
     <h2>Estoque Atual</h2>
@@ -66,7 +64,7 @@
         </tr>
     </template>
 
-        </form>
-    
+
+
     </mat-drawer-container>
-</mat-drawer-container>
+

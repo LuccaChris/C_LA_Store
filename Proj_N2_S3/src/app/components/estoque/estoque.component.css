@@ -1,5 +1,5 @@
 .Content{
-    width: auto;
+
   height: 100vh;
   margin: 0%;
   border: 1px solid #ffffff;
@@ -112,9 +112,10 @@ td {
 }
 /*---------------------------------*/
 table {
-  width: 100%;
+  width: 75%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 table, th, td {
   border: 1px solid #ccc;
@@ -132,11 +133,13 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
+  margin-left: 20px;
 }
 input {
   padding: 8px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 75%;
+  margin-left: 20px;
 }
 button {
   padding: 10px 20px;
@@ -144,6 +147,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  margin-left: 20px;
 }
 button:hover {
   background-color: #45a049;
