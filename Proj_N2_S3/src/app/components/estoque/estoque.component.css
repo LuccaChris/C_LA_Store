@@ -1,0 +1,150 @@
+.Content{
+    width: auto;
+  height: 100vh;
+  margin: 0%;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  border-radius: 16px ;
+
+}
+
+.ContentMain{
+  margin-left: 40%;
+    border-radius: 16px;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+
+}
+.drawerC{
+    background-color: black;
+    border-radius: 16px;
+    width: 30%;
+    height: 100vh;
+}
+img{
+    width: 165px;
+    height: 175px;
+    border-radius: 50px;
+}
+
+/*  ----------------------------------*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+img{
+  display: flex;
+  margin: 50px;
+
+}
+
+.container {
+  display: flex;
+}
+nav ul {
+  margin-left: 50px;
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-bottom: 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.form-container {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+}
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.formsUR{
+  display: flex;
+}
+.form-container .buttons button {
+  width: 48%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-container .buttons button.cancel {
+  background-color: #ff4d4d;
+}
+.form-container .buttons button.submit {
+  background-color: #4CAF50;
+}
+
+.dados-form{
+  margin-top: 150px;
+
+  width: 100%;
+
+}
+.dados-full-width {
+  width: 100%;
+  border-radius: 16px;
+}
+td {
+  padding-right: 8px;
+}
+/*---------------------------------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f8f8f8;
+}
+form {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}

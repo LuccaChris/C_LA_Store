@@ -1,1 +1,72 @@
-<p>estoque works!</p>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<mat-drawer-container class="Content">
+    <mat-drawer class="drawerC" mode="side" opened="">
+      <img src="/Proj_N2_S3/assets/perfilmg.png" alt="foto">
+        <nav>
+            <ul>
+                <li><a href="#">Cadastro de Usuários</a></li>
+                <li><a routerLink="estoque"href="estoque">Estoque</a></li>
+                <li><a routerLink="" href="#">Dashboard</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </mat-drawer>
+
+    <mat-drawer-container class="ContentMain">
+    
+        <form class="dados-form">
+            <h1>Gerenciamento de Estoque</h1>
+
+    <!-- Formulário para Adicionar/Atualizar Produto -->
+    <form id="produto-form">
+        <h2>Adicionar/Atualizar Produto no Estoque</h2>
+        <label for="id_produto">ID do Produto:</label>
+        <input type="number" id="id_produto" name="id_produto" placeholder="Digite o ID do produto..." required>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade..." required>
+
+        <label for="nivel_minimo">Nível Mínimo:</label>
+        <input type="number" id="nivel_minimo" name="nivel_minimo" placeholder="Digite o nível mínimo..." required>
+
+        <button type="submit">Salvar Produto</button>
+    </form>
+
+    <!-- Tabela para Exibir o Estoque -->
+    <h2>Estoque Atual</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Produto</th>
+                <th>Quantidade</th>
+                <th>Nível Mínimo</th>
+                <th>Última Atualização</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="estoque-lista">
+            <!-- Dados do estoque serão preenchidos aqui via JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Template do Item de Estoque para Atualização e Exclusão -->
+    <template id="estoque-template">
+        <tr>
+            <td class="produto-nome"></td>
+            <td class="produto-quantidade"></td>
+            <td class="produto-nivel"></td>
+            <td class="produto-data"></td>
+            <td>
+                <button class="editar-btn">Editar</button>
+                <button class="excluir-btn">Excluir</button>
+            </td>
+        </tr>
+    </template>
+
+        </form>
+    
+    </mat-drawer-container>
+</mat-drawer-container>
