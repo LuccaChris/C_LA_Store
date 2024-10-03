@@ -72,7 +72,7 @@ nav ul li a {
   margin: auto;
 }
 .form-container input {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -100,16 +100,18 @@ nav ul li a {
 .dados-form{
   margin-top: 150px;
 
-  width: 100%;
+  
 
 }
+.dados-full-width2 {
+  margin: 0px;
+}
 .dados-full-width {
-  width: 100%;
-  border-radius: 16px;
+  margin-left: 25%;
+  width: 33%;
+  border-radius: 25px;
 }
-td {
-  padding-right: 8px;
-}
+
 /*---------------------------------*/
 
 section {
